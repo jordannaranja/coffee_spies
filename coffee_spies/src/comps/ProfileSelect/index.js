@@ -5,10 +5,6 @@ const Container = styled.div`
   width: auto;
   height: 90px;
   align-items: center;
-  background: url(Unsplash-Avatars_0004s_0015_ali-pazani-_AIaWSaSTVI-unsplash.jpg);
-  border: 2px solid #66B700;
-  box-sizing: border-box;
-  border-radius: 10px;
 `;
 
 const Button = styled.button`
@@ -28,12 +24,14 @@ const Button2 = styled.button`
   height: 70px;
 
   background: url(Unsplash-Avatars_0004s_0015_ali-pazani-_AIaWSaSTVI-unsplash.jpg);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
   border-radius: 10px;
 `; 
 
 const ProfileSelect = () => {
-    return 
-    <Container>
+
+    return <Container>
 
       <Button></Button>
       <Button2></Button2>

@@ -4,6 +4,9 @@ import LoginButton from '../src/comps/LoginButton';
 import PostInput from '../src/comps/PostInput'; 
 import PostDescInput from '../src/comps/PostDescInput';
 import CreatePostButton from '../src/comps/CreatePostButton';  
+import Cancel from '../src/comps/Cancel';
+import ProfileSelect from './comps/ProfileSelect';
+import ProfileUpload from './comps/ProfileUpload';
 
 function App() {
   return (
@@ -11,7 +14,10 @@ function App() {
     // <LoginButton />
     // <PostInput /> 
     // <PostDescInput /> 
-    <CreatePostButton />
+    // <CreatePostButton />
+    // <Cancel />
+    // <ProfileSelect />
+    <ProfileUpload />
   );
 }
 
