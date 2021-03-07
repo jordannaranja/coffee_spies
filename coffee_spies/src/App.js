@@ -7,6 +7,9 @@ import CreatePostButton from '../src/comps/CreatePostButton';
 import Cancel from '../src/comps/Cancel';
 import ProfileSelect from './comps/ProfileSelect';
 import ProfileUpload from './comps/ProfileUpload';
+import RegisterNowButton from './comps/RegisterNowButton';
+import DropdownMenu from './comps/DropdownMenu';
+import FeedPost from './comps/FeedPost';
 
 function App() {
   return (
@@ -17,7 +20,13 @@ function App() {
     // <CreatePostButton />
     // <Cancel />
     // <ProfileSelect />
-    <ProfileUpload />
+    //<ProfileUpload />
+    <div>
+    <RegisterNowButton text="Register Now"/>
+    <RegisterNowButton text="Log In"/>
+    <DropdownMenu />
+    <FeedPost title="Title" desc="Short description..." like="9" comment="2"/>
+    </div>
   );
 }
 
