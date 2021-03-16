@@ -1,7 +1,7 @@
 import React from 'react'; 
 import styled from 'styled-components'; 
 
-const Button = styled.button`
+const Button = styled.div`
   position: absolute;
   width: 50px;
   height: 50px;

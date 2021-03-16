@@ -1,3 +1,4 @@
+import Add from './Add';
 import Cancel from './Cancel';
 import CreatePostButton from './CreatePostButton';
 import EmailInput from './EmailInput';
@@ -7,4 +8,4 @@ import ProfileSelect from './ProfileSelect';
 import ProfileUpload from './ProfileUpload';
 import LoginButton from './LoginButton';
 
-export {Cancel, CreatePostButton, EmailInput, PostInput, PostDescInput, ProfileSelect, ProfileUpload, LoginButton};
+export {Add, Cancel, CreatePostButton, EmailInput, PostInput, PostDescInput, ProfileSelect, ProfileUpload, LoginButton};

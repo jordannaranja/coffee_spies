@@ -1,10 +1,11 @@
 import './App.scss';
+
+import Main from './pages/main';
+import Login from './pages/login';
+import Register from './pages/register';
+import Setting from './pages/setting';
+import CreatePost from './pages/createpost';
 import { Link } from "react-router-dom";
-import Main from 'pages/Main';
-import Login from 'pages/Login';
-import Register from 'pages/Register';
-import Setting from 'pages/Setting';
-import CreatePost from 'pages/CreatePost';
 
 import {
   BrowserRouter as Router,
@@ -20,16 +21,16 @@ function App() {
           <Route exact path="/">
             <Login />
           </Route>
-          <Route exact path="/Main">
+          <Route exact path="/main">
             <Main />
           </Route>          
-          <Route exact path="/Register">
+          <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="/CreatePost">
+          <Route exact path="/createpost">
             <CreatePost />
           </Route>
-          <Route exact path="/Setting">
+          <Route exact path="/setting">
             <Setting />
           </Route>
         </Switch>
