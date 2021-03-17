@@ -6,7 +6,8 @@ const Input = styled.input`
     min-height: 40px; 
     border: 1px solid #EDEDED;
     background-color: #EDEDED;  
-    border-radius: 10px; 
+    border-radius: 10px;
+    margin: 11% 0% 0% 0%;  
 `; 
 
 const PostInput = () => {
