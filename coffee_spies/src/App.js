@@ -17,10 +17,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/login">
             <Login />
           </Route>
-          <Route exact path="/main">
+          <Route exact path="/">
             <Main />
           </Route>          
           <Route exact path="/register">

@@ -7,5 +7,8 @@ import PostDescInput from './PostDescInput';
 import ProfileSelect from './ProfileSelect';
 import ProfileUpload from './ProfileUpload';
 import LoginButton from './LoginButton';
+import FeedPost from './FeedPost';
+import Header from './Header';
 
-export {Add, Cancel, CreatePostButton, EmailInput, PostInput, PostDescInput, ProfileSelect, ProfileUpload, LoginButton};
+
+export {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton};
