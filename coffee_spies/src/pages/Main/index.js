@@ -1,21 +1,35 @@
-import React from 'react'; 
+import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import {useHistory} from 'react-router-dom';
 import styled from 'styled-components'; 
+import Logo from '../../images/coffee-spies-logo.png';
 
-const Button = styled.div`
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px; 
-  align-item:center;
-  font-size: 27pt;
+//shortcut imports
+import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton} from '../../comps';
 
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  transform: rotate(45deg);
+const Container = styled.div`
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+.scrollview {
+}
 `; 
 
 const Main = () => {
-    return <Button>+</Button>
+    return <Container>
+
+      <Header />
+      <div className="scrollview">
+       <FeedPost />
+       <FeedPost />
+      </div>
+    </Container>
 }
 
 export default Main;
