@@ -1,5 +1,6 @@
-import React from 'react'; 
-import styled from 'styled-components'; 
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const Button = styled.button`
   position: absolute;
@@ -11,15 +12,17 @@ const Button = styled.button`
 
   background: #FFFFFF;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  transform: rotate(45deg);
 `; 
 
-const Cancel = () => {
-    return <Button>+</Button>
+const Cancel = ({onClick, text}) => {
+  return <Link to={onClick}>
+      <Button>{text}</Button>
+      </Link>
 }
 
 Cancel.defaultProps = {
-
+  text: "x",
+  onClick: "/"
 }
 
 export default Cancel;

@@ -51,7 +51,7 @@ const Login = () => {
 
   const [error, setError] = useState(null);
   
-    return <Container>
+    return <Link to={"/main"}><Container>
 
       <img src={Logo} />
       <div className="header"> Welcome Back!
@@ -60,7 +60,7 @@ const Login = () => {
       <EmailInput type="text" placeholder="Email" onChange={(e)=>setUn(e.target.value)} />
       <EmailInput type="password" placeholder="Password" onChange={(e)=>setPw(e.target.value)} />
       <LoginButton value="Submit" text="Sign In" />
-    </Container>
+    </Container></Link>
 }
 
 export default Login;

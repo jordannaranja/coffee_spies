@@ -15,9 +15,12 @@ import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, 
 
 const Container = styled.div`
   display:flex;
+  align-item:center;
+  justify-content:center;
   flex-direction:column;
-  height:100vh;
+  width: 375px;
 .scrollview {
+  margin-left:30px;
 }
 `; 
 
