@@ -1,21 +1,53 @@
 import React from 'react'; 
 import styled from 'styled-components'; 
+import Header from '../../comps/Header'; 
+import PostInput from '../../comps/PostInput'; 
+import PostDescInput from '../../comps/PostDescInput'; 
+import ProfileUpload from '../../comps/ProfileUpload'; 
+import CreatePostButton from '../../comps/CreatePostButton';
+import Cancel from '../../comps/Cancel'; 
 
-const Button = styled.div`
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px; 
-  align-item:center;
-  font-size: 27pt;
+const PageCont = styled.div``; 
 
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-  transform: rotate(45deg);
+const InputCont = styled.div`
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+`; 
+
+const PostCont = styled.div`
+  margin-right: 13%; 
+  margin-top: 15%; 
+`;
+
+const AddTitle = styled.p`
+  font-size: 12px;
+  margin: 5% 70% -10% 0%; 
+`; 
+
+const AddDesc = styled.p`
+  font-size: 12px; 
+  margin 5% 60% -10% 0%;
 `; 
 
 const CreatePost = () => {
-    return <Button>+</Button>
+    return <PageCont>
+      <Header />
+
+      <InputCont>
+        <AddTitle>Add a Title</AddTitle>
+        <PostInput />
+        <AddDesc>Add a Description</AddDesc>
+        <PostDescInput />
+        <ProfileUpload />
+      </InputCont>
+
+      <PostCont>
+        <CreatePostButton />
+        <Cancel />
+      </PostCont>
+
+    </PageCont>
 }
 
 export default CreatePost;

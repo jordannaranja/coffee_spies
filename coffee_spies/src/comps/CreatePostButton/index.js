@@ -9,6 +9,8 @@ const Button = styled.button`
     border-radius: 10px; 
     color: #FFFFFF;
     font-weight: bold; 
+    margin-top: 100%;
+    margin-right: 20px;  
 `; 
 
 const CreatePostButton = () => {
