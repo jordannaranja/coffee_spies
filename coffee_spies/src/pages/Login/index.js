@@ -40,6 +40,7 @@ flex-direction: column;
 
   const CSLogo = styled.img`
   margin-bottom: 50px;
+  width: 350px;
   `;
 
   const LogIn = styled.div`

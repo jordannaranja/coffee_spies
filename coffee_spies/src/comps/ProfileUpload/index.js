@@ -17,9 +17,10 @@ const Button = styled.button`
   position: absolute;
   width: 72px;
   height: 72px;
-
+  border: none;
   background: #C4C4C4;
   border-radius: 15px;
+  cursor: pointer;
 `;
 
 const ProfileUpload = () => {

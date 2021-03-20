@@ -6,14 +6,15 @@ const Input = styled.input`
     min-height: 40px; 
     border: 1px solid #FFFFFF; 
     border-radius: 10px; 
+    ${props=>props.bgcolor && "background-color:"+props.bgcolor+";"}
 `; 
 
-const EmailInput = () => {
-    return <Input />
+const EmailInput = ({bgcolor}) => {
+    return <Input bgcolor={bgcolor}/>
 }
 
 EmailInput.defaultProps = {
-
+bgcolor: null
 }
 
 export default EmailInput;
