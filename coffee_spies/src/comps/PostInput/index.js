@@ -7,7 +7,6 @@ const Input = styled.input`
     border: 1px solid #EDEDED;
     background-color: #EDEDED;  
     border-radius: 10px;
-    margin: 11% 0% 0% 0%;  
 `; 
 
 const PostInput = () => {

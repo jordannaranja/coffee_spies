@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components'; 
 
 const Container = styled.div`
-  position: absolute;
   min-width: 320px;
   height: 350px;   
   display: flex;
@@ -10,7 +9,6 @@ const Container = styled.div`
   justify-content: center;
   background: #EDEDED;
   border-radius: 15px;
-  margin-top: 62%; 
 `; 
 
 const Button = styled.button`

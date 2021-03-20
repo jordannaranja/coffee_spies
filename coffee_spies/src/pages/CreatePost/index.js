@@ -7,46 +7,60 @@ import ProfileUpload from '../../comps/ProfileUpload';
 import CreatePostButton from '../../comps/CreatePostButton';
 import Cancel from '../../comps/Cancel'; 
 
-const PageCont = styled.div``; 
+const PageCont = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+`; 
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  max-width: 375px;
+  `;
 
 const InputCont = styled.div`
   display: flex; 
   flex-direction: column;
-  align-items: center;
+  text-align: left;
 `; 
 
 const PostCont = styled.div`
-  margin-right: 13%; 
-  margin-top: 15%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 320px;
 `;
 
-const AddTitle = styled.p`
-  font-size: 12px;
-  margin: 5% 70% -10% 0%; 
-`; 
-
-const AddDesc = styled.p`
-  font-size: 12px; 
-  margin 5% 60% -10% 0%;
-`; 
 
 const CreatePost = () => {
     return <PageCont>
-      <Header />
+      <Container>
+        <Header />
 
-      <InputCont>
-        <AddTitle>Add a Title</AddTitle>
-        <PostInput />
-        <AddDesc>Add a Description</AddDesc>
-        <PostDescInput />
-        <ProfileUpload />
-      </InputCont>
+        <InputCont>
+          <h2>Add a Title</h2>
+          <PostInput />
+          <h2>Add a Description</h2>
+          <PostDescInput />
+          <h2>Add a Picture</h2>
+          <ProfileUpload />
+        </InputCont>
 
-      <PostCont>
-        <CreatePostButton />
-        <Cancel />
-      </PostCont>
-
+        <PostCont>
+          <CreatePostButton />
+          <Cancel />
+        </PostCont>
+      </Container>
     </PageCont>
 }
 

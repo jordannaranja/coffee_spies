@@ -14,24 +14,32 @@ import Logo from '../../images/coffee-spies-logo.png';
 import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton} from '../../comps';
 
 const Container = styled.div`
-  display:flex;
-  align-item:center;
-  justify-content:center;
-  flex-direction:column;
-  width: 375px;
-.scrollview {
-  margin-left:30px;
-}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 `; 
+
+const Cont = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 150px;
+  min-width: 375px;
+  max-width: 375px;
+  flex-direction: column;
+`;
 
 const Main = () => {
     return <Container>
-
       <Header />
-      <div className="scrollview">
-       <FeedPost />
-       <FeedPost />
-      </div>
+      <Cont>
+        <div className="scrollview">
+          <FeedPost />
+          <FeedPost />
+        </div>
+      </Cont>
     </Container>
 }
 

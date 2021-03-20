@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 min-width: 320px;
 max-width: 320px;
+margin-bottom: 20px;
 `;
 
 const UserPost = styled.div`

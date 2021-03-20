@@ -20,6 +20,7 @@ const Container = styled.div`
   flex-direction: column;
   width: 100vw;
   height: 100vh;
+  margin-top: 150px;
 `; 
 
 const Cont = styled.div`
@@ -28,7 +29,6 @@ const Cont = styled.div`
   min-width: 320px;
   max-width: 320px;
   text-align: left;
-  margin: 20px;
 `;
 
 const UploadImg = styled.button`
