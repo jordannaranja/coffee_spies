@@ -4,23 +4,27 @@ import LogoSrc from '../../images/coffee-spies-logo.png'
 import ProfileSrc from '../../images/profileimage.png'
 
 const HeaderCont = styled.div`
-    max-width: 375px;
+    min-width: 100vw;
+    max-width: 100vw;
     min-height: 130px; 
+    max-height: 130px; 
     display: flex; 
     flex-direction: row; 
     align-items: center; 
+    justify-content: space-between;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 `; 
 
 const Logo = styled.img`
     max-width: 232px;
-    max-height: 49px; 
+    max-height: 49px;
+    margin: 10px; 
 `; 
 
 const ProfileImg = styled.img`
     max-width: 70px; 
-    max-height: 70px; 
-    margin-left: 12%; 
+    max-height: 70px;
+    margin: 20px; 
 `; 
 
 const Header = () => {
