@@ -8,13 +8,10 @@ const Button = styled.button`
     border: 1px solid #107200; 
     border-radius: 10px; 
     color: #FFFFFF;
-    font-weight: bold; 
-    margin-top: 100%;
-    margin-right: 20px;  
 `; 
 
 const CreatePostButton = () => {
-    return <Button>Create Post</Button>
+    return <Button><h3>Create Post</h3></Button>
 }
 
 CreatePostButton.defaultProps = {

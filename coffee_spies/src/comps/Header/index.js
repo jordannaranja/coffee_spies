@@ -4,6 +4,9 @@ import LogoSrc from '../../images/coffee-spies-logo.png'
 import ProfileSrc from '../../images/profileimage.png'
 
 const HeaderCont = styled.div`
+    position: fixed;
+    top: 0;
+    overflow: hidden;
     min-width: 100vw;
     max-width: 100vw;
     min-height: 130px; 
@@ -13,6 +16,7 @@ const HeaderCont = styled.div`
     align-items: center; 
     justify-content: space-between;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
 `; 
 
 const Logo = styled.img`

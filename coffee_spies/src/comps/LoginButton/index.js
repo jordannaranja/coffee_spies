@@ -8,12 +8,11 @@ const Button = styled.button`
     border: 1px solid #107200; 
     border-radius: 10px; 
     color: #FFFFFF;
-    font-weight: bold; 
     margin-top: 20px;
 `; 
 
 const LoginButton = ({text}) => {
-    return <Button>{text}</Button>
+    return <Button><h3>{text}</h3></Button>
 }
 
 LoginButton.defaultProps = {
