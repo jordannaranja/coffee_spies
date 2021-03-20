@@ -9,6 +9,7 @@ import ProfileUpload from './ProfileUpload';
 import LoginButton from './LoginButton';
 import FeedPost from './FeedPost';
 import Header from './Header';
+import RegisterNowButton from './RegisterNowButton';
 
 
-export {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton};
+export {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton, RegisterNowButton};
