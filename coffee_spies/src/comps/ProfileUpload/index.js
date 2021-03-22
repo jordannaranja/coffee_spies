@@ -1,7 +1,7 @@
-import React from 'react'; 
+import React, { useState } from 'react'; 
 import styled from 'styled-components'; 
 
-
+import axios from 'axios';
 
 const Container = styled.div`
   min-width: 320px;
@@ -24,7 +24,7 @@ const Button = styled.button`
 `;
 
 const ProfileUpload = () => {
-  const [img, setImage] = useState(null);
+  const [img, setImg] = useState(null);
 
   const onChange = (e) => { }
   
@@ -36,9 +36,9 @@ const ProfileUpload = () => {
         fd.append('filename', e.target.files[0]);
 
         axios
-          .post(`${URL}/user/profile-upload` , fd) 
+          .post(`${URL}/profileupload` , fd) 
           .then(res => {
-            setImgUpload(res.data.imge_url);
+            setImg(res.data.imge_url);
           })
           .catch(error => {
             console.log(error.response);
@@ -46,13 +46,12 @@ const ProfileUpload = () => {
 
       }
     }
-  }
+ 
 
     return <Container>
-
       <Button 
-       type="file" accept="image/jpeg, image/jpg" //uploadable file extensions
-      onChnage = {isSelectedImg} >
+        type="file" accept="image/jpeg, image/jpg" //uploadable file extensions
+        onClick = {isSelectedImg} >
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.75 10.2464L16 4.99637L21.25 10.2464" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M16 19V5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -62,6 +61,7 @@ const ProfileUpload = () => {
 
     </Container>
 
+}
 
 ProfileUpload.defaultProps = {
 
