@@ -1,9 +1,9 @@
 import './App.scss';
-import Main from './pages/createpost';
-import Login from './pages/login';
-import Register from './pages/register';
-import Setting from './pages/setting';
-import CreatePost from './pages/createpost';
+import Main from '../src/pages/Main';
+import Login from '../src/pages/Login';
+import Register from '../src/pages/Register';
+import Setting from '../src/pages/Setting';
+import CreatePost from '../src/pages/CreatePost';
 import { Link } from "react-router-dom";
 
 import {
