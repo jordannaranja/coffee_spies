@@ -1,10 +1,10 @@
-import './App.scss';
-import Main from '../src/pages/Main';
-import Login from '../src/pages/Login';
-import Register from '../src/pages/Register';
-import Setting from '../src/pages/Setting';
-import CreatePost from '../src/pages/CreatePost';
-import { Link } from "react-router-dom";
+import './App.scss';import { Link } from "react-router-dom";
+
+import Main from './pages/main';
+import Login from './pages/login';
+import Register from './pages/register';
+import CreatePost from './pages/createpost';
+import Setting from './pages/setting';
 
 import {
   BrowserRouter as Router,
@@ -18,10 +18,10 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
-            <Login />
-          </Route>
-          <Route exact path="/main">
             <Main />
+          </Route>
+          <Route exact path="/login">
+            <Login />
           </Route>          
           <Route exact path="/register">
             <Register />

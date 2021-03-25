@@ -10,25 +10,11 @@ import {useHistory} from 'react-router-dom';
 import styled from 'styled-components'; 
 import Logo from '../../images/coffee-spies-logo.png';
 
-const axios = require('axios').default;
-
-// Make a request for a user with a given ID
-
-axios.get('/user?ID=')
-  .then(function (response) {
-    // handle success
-    console.log(response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
-
 //shortcut imports
 import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton} from '../../comps';
+
+const axios = require('axios').default;
+
 
 const Container = styled.div`
   display: flex;
