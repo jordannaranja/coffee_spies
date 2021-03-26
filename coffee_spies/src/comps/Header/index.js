@@ -10,7 +10,7 @@ import {
   } from "react-router-dom";
 
 const HeaderCont = styled.div`
-    position: fixed;
+    position: absolute;
     top: 0;
     overflow: hidden;
     min-width: 100vw;
