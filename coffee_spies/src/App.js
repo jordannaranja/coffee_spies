@@ -8,7 +8,8 @@ import {
 } from "react-router-dom";
 
 import jwtDecode from "jwt-decode";
-import useLocalStorage from "react-use-localstorage";
+import ReactDOM from 'react-dom';
+import useLocalStorage from 'react-use-localstorage';
 
 import Main from './pages/main';
 import Login from './pages/login';
