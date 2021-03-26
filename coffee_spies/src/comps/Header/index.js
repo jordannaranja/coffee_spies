@@ -2,6 +2,12 @@ import React from 'react';
 import styled from 'styled-components'; 
 import LogoSrc from '../../images/coffee-spies-logo.png'
 import ProfileSrc from '../../images/profileimage.png'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const HeaderCont = styled.div`
     position: fixed;
@@ -34,7 +40,9 @@ const ProfileImg = styled.img`
 const Header = () => {
     return <HeaderCont>
         <Logo src={LogoSrc}/>
-        <ProfileImg src={ProfileSrc}/>
+        <Link to={"/setting"}>
+            <ProfileImg src={ProfileSrc}/>
+        </Link>
     </HeaderCont>
 }
 
