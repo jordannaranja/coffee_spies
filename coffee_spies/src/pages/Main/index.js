@@ -52,10 +52,8 @@ const Main = () => {
     return <Container>
       <Header />
       <Cont>
-        <div className="scrollview">
           <FeedPost />
           <FeedPost />
-        </div>
       </Cont>
     </Container>
 }
