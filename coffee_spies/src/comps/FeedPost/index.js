@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+import { useHistory } from 'react-router-dom';
+
 
 const Container = styled.div`
 display: flex;
@@ -13,25 +15,18 @@ const UserPost = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 14px;
 `;
+
 const Post = styled.div`
-display: flex;
-position: relative;
-border-radius: 15px;
+object-fit: contain;
 color: white;
-min-width: 320px;
-min-height: 350px;
-max-width: 320px;
-max-height: 350px;
-background-image: url(${props=>props.bgimage? props.bgimage : "coffee.jpg"});
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: contain;
+width:320px;
+height:350px;
+border-radius: 36px;
 `;
 
 const Gradient = styled.div`
-background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 100%);
+background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,75) 100%);
 min-width: 320px;
 min-height: 350px;
 max-width: 320px;
@@ -44,7 +39,8 @@ display: flex;
 flex-direction: column;
 position: absolute;
 bottom: 0px;
-margin: 20px;
+margin-top: 20px;
+margin-left:20px;
 div {
     display: flex;
     align-items: center;
@@ -60,6 +56,9 @@ display: flex;
 
 
 const FeedPost = ({title, desc, like, comment}) => {
+
+    const history = useHistory();
+
 return <Container>
     <UserPost>
         <div>

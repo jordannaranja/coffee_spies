@@ -10,17 +10,18 @@ import {useHistory} from 'react-router-dom';
 import styled from 'styled-components'; 
 import Logo from '../../images/coffee-spies-logo.png';
 import LoginImg from '../../images/login.jpg';
+import axios from 'axios';
 
 //shortcut imports
 import {Add, Cancel, CreatePostButton, EmailInput, PostInput, PostDescInput, ProfileSelect, ProfileUpload, LoginButton, RegisterNowButton} from '../../comps';
 
 const Container = styled.div`
-display: flex;
-height: 100vh;
-width: 100vw;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 1)),
   url('${LoginImg}');
   background-repeat: no-repeat;
@@ -54,6 +55,10 @@ const Login = () => {
   const [pw, setPw] = useState("");
 
   const [error, setError] = useState(null);
+
+  const getData = async ()=>{
+    var resp = await axios.get("")
+  }
   
     return <Container>
       <CSLogo src={Logo} />

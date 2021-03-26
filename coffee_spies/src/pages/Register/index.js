@@ -60,10 +60,10 @@ const Register = () => {
         <EmailInput type="password" placeholder="Password"/>
         <h2>Confirm Password</h2>
         <EmailInput type="password" placeholder="Confirm Password"/>
-        <LoginButton value="Submit" text="Register" />
+        <Link to={"/"}><LoginButton value="Submit" text="Register" /></Link>
       </Cont>
       <Reg>
-      <Link to={"/"}><RegisterNowButton text="Log In"/></Link>
+        <Link to={"/"}><RegisterNowButton text="Log In"/></Link>
       </Reg>
     </Container>
 }
