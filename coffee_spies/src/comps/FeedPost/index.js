@@ -13,21 +13,15 @@ const UserPost = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-bottom: 14px;
 `;
+
 const Post = styled.div`
-display: flex;
-position: relative;
-border-radius: 15px;
+object-fit: contain;
 color: white;
-min-width: 320px;
-min-height: 350px;
-max-width: 320px;
-max-height: 350px;
-background-image: url(${props=>props.bgimage? props.bgimage : "coffee.jpg"});
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: contain;
+width:320px;
+height:350px;
+border-radius: 36px;
+background-image: url(${props=>props.bgimage? props.bgimage : "coffee.jpg"});s
 `;
 
 const Gradient = styled.div`
