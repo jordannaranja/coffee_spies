@@ -32,14 +32,10 @@ const ProfileUpload = () => {
   
     const formData = new FormData()
     formData.append("image", file)
-  
 
     const result = await axios.post('/images', formData, { headers: {'Content-Type': 'multipart/form-data'}})
     setImage(result.data.imagePath)
   }
-
-
-  
 
     return <Container onSubmit={submit}>
 
