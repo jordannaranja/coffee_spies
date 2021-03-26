@@ -1,5 +1,5 @@
 import React, { useState } from 'react'; 
-import axios from 'axios'
+import axios from 'axios';
 import styled from 'styled-components'; 
 
 const Container = styled.div`
@@ -32,14 +32,10 @@ const ProfileUpload = () => {
   
     const formData = new FormData()
     formData.append("image", file)
-  
 
     const result = await axios.post('/images', formData, { headers: {'Content-Type': 'multipart/form-data'}})
     setImage(result.data.imagePath)
   }
-
-
-  
 
     return <Container onSubmit={submit}>
 
