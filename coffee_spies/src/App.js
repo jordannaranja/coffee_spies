@@ -32,15 +32,15 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/Main">
-            <Main />
+            <Main setToken={setToken}/>
           </Route>
-          <Route exact path="/login">
-            <Login />
+          <Route exact path="/">
+            <Login setToken={setToken}/>
           </Route>          
           <Route exact path="/register">
             <Register />
           </Route>
-          <Route exact path="/">
+          <Route exact path="/createpost">
             <CreatePost />
           </Route>
           <Route exact path="/setting">

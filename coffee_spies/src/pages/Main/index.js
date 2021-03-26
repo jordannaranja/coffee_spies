@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import axios from "axios";
-
-import { useParams, useHistory } from 'react-router-dom';
-
+// import axios from 'axios';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import {useHistory} from 'react-router-dom';
 import styled from 'styled-components'; 
 import Logo from '../../images/coffee-spies-logo.png';
 
 //shortcut imports
 import {Add, Cancel, CreatePostButton, EmailInput, PostInput, FeedPost, Header, PostDescInput, ProfileSelect, ProfileUpload, LoginButton} from '../../comps';
+
+const axios = require('axios').default;
 
 
 const Container = styled.div`
@@ -29,37 +35,17 @@ const Cont = styled.div`
 `;
 
 const Main = () => {
-
-  const params = useParams();
-  const history = useHistory();
-
-  const [posts, setPosts] = useState([]);
-  const [username, setUsername] = useState("");
-  const [postlikes, setPostLikes] = useState("");
-
-  const getData = async () => {
-      const resp = await axios.get("https://petsave-backend.herokuapp.com/api/posts");
-      console.log(resp.data.posts)
-
-      var token = await localStorage.getItem("token")
-      if(token){
-          axios.defaults.headers.common['Authorization'] = token;
-          setPosts([...resp.data.posts]);
-      } else {
-          history.push("/login");
-      }
-
     return <Container>
       <Header />
       <Cont>
         <div className="scrollview">
           <FeedPost />
           <FeedPost />
+          <FeedPost />
+          <FeedPost />
         </div>
       </Cont>
     </Container>
-}
-
 }
 
 export default Main;
