@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
+import { useHistory } from 'react-router-dom';
+
 
 const Container = styled.div`
 display: flex;
@@ -53,6 +55,9 @@ display: flex;
 `;
 
 const FeedPost = ({title, desc, like, comment}) => {
+
+    const history = useHistory();
+
 return <Container>
     <UserPost>
         <div>

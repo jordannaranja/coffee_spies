@@ -31,10 +31,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/Main">
             <Main setToken={setToken}/>
           </Route>
-          <Route exact path="/login">
+          <Route exact path="/">
             <Login setToken={setToken}/>
           </Route>          
           <Route exact path="/register">
