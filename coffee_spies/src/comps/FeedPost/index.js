@@ -21,11 +21,10 @@ color: white;
 width:320px;
 height:350px;
 border-radius: 36px;
-background-image: url(${props=>props.bgimage? props.bgimage : "coffee.jpg"});s
 `;
 
 const Gradient = styled.div`
-background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 100%);
+background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 35%, rgba(0,0,0,75) 100%);
 min-width: 320px;
 min-height: 350px;
 max-width: 320px;
@@ -63,7 +62,7 @@ return <Container>
         </div>
         
     </UserPost>
-    <Post>
+    <Post img src={props=>props.bgimage? props.bgimage : "coffee.jpg"}>
         <Gradient>
         </Gradient>
         <Content>

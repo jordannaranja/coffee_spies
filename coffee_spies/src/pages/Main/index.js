@@ -40,6 +40,9 @@ const Main = () => {
       <Cont>
         <div className="scrollview">
           <FeedPost />
+          <FeedPost />
+          <FeedPost />
+          <FeedPost />
         </div>
       </Cont>
     </Container>
