@@ -37,7 +37,8 @@ display: flex;
 flex-direction: column;
 position: absolute;
 bottom: 0px;
-margin: 20px;
+margin-top: 20px;
+margin-left:20px;
 div {
     display: flex;
     align-items: center;
@@ -62,7 +63,7 @@ return <Container>
         </div>
         
     </UserPost>
-    <Post img src={props=>props.bgimage? props.bgimage : "coffee.jpg"}>
+    <Post>
         <Gradient>
         </Gradient>
         <Content>
